@@ -509,7 +509,7 @@ body {
     box-shadow: 0px 0px 0px 1px #7EA607, 1px 1px 12px 1px rgba(0, 0, 0, 0.48);
 }
 /*text-and-tabs-blocks*/
-.text-and-tabs-blocks h1 {
+.text-and-tabs-blocks h2 {
     font-weight: 300;
     font-size: 31px;
     color: #4E4E4E;
@@ -534,7 +534,7 @@ body {
     text-align: justify;
 }
 /*users-list*/
-.users-list h1 {
+.users-list h2 {
     margin-left: 8%;
 }
 /*carousel*/
@@ -659,6 +659,7 @@ body {
 .tabs {
     margin-top: 15px;
     width: 85%;
+    height:190px;
     margin-left: 9%;
 }
 .tabs div.tab {
@@ -1073,6 +1074,12 @@ body {
     margin: 0;
     padding: 0;
 }
+@media screen and (max-device-width: 1024px),
+screen and (max-width: 1024px) {
+		.register-form .error-txt {
+			display:none !important;
+		}
+}
 @media screen and (max-device-width: 960px),
 screen and (max-width: 960px) {
 		/*all*/
@@ -1173,12 +1180,17 @@ screen and (max-width: 960px) {
     /*tabs*/
     .tabs {
         width: 95%;
+        height:auto;
         margin: 15px auto;
     }
     .tabs .tabcontent {
         width:93%;
         height: auto;
     }
+    /*breadcrumbs*/
+    .breadcrumbs {
+    		text-align: center;
+		}
     /*percentage-сircle*/
     .percentage-сircle {
         display: block;
@@ -1202,7 +1214,7 @@ screen and (max-width: 500px) {
         width: 96%;
     }
     /*text-and-tabs-blocks*/
-    .text-and-tabs-blocks h1 {
+    .text-and-tabs-blocks h2 {
         line-height: 32px;
     }
     /*carousel*/
