@@ -14,444 +14,437 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="header-main_logo">
+      <div class="header-main-logo">
         <a href="#">
           <img src="images/logo.jpg" alt="Web coder test task logo">
         </a>
       </div>
     </div>
   </header>
-  <div class="main-form">
-    <div class="wrap">
-      <div class="form-container">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="images/slide_1.jpg" alt="dating slide1" style="width:100%">
+  
+  <main>
+    <div class="slideshow-and-form-bg">
+      <div class="wrap">
+        <div class="slideshow-and-form-container">
+          <div class="slideshow">
+            <div class="slides fade">
+              <img src="images/slide_1.jpg" alt="dating slide1" style="width:100%">
+            </div>
+            <div class="slides fade">
+              <img src="images/slide_2.jpg" alt="dating slide2" style="width:100%">
+            </div>
+            <div class="slides fade">
+              <img src="images/slide_3.jpg" alt="dating slide3" style="width:100%">
+            </div>
+            <div class="slides fade">
+              <img src="images/slide_4.jpg" alt="dating slide4" style="width:100%">
+            </div>
+            <div class="dots">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
           </div>
-          <div class="mySlides fade">
-            <img src="images/slide_2.jpg" alt="dating slide2" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/slide_3.jpg" alt="dating slide3" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/slide_4.jpg" alt="dating slide4" style="width:100%">
-          </div>
-          <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-          </div>
+          <form class="register-form" action="#" method="post">
+            <h1 class="gradient-text">Join us now. It's FREE</h1>
+            <div class="gender-field-box">
+              <div class="gender-box">
+                <label class="label" for="userFormGender">I am</label>
+                <div class="gender-icons" id="userFormGender">
+                  <label>
+                    <input type="radio" checked name="gender" value="woman">
+                    <span class="gender-w"></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" value="man">
+                    <span class="gender-m"></span> 
+                  </label>
+                </div>
+              </div>
+              <div class="find-gender-box">
+                <label class="label choose-gender" for="userFormFindGender"><span class="search-icon"></span>looking for</label>
+                <div class="gender-icons" id="userFormFindGender">
+                  <label>
+                    <input type="radio" checked name="find-gender" value="woman">
+                    <span class="gender-w"></span> 
+                  </label>
+                  <label>
+                    <input type="radio" name="find-gender" value="man">
+                    <span class="gender-m"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="all-field-box" id="name">
+              <label class="label" for="userFormName">Name</label>
+              <div class="field-box name">
+                <input id="userFormName" name="name" class="field" type="text">
+              </div>
+              <div class="error-txt-box">
+                <div class="error-txt">Enter your name</div>
+              </div>
+              <div class="valid-icon"></div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="all-field-box" id="age">
+              <label class="label" for="userFormAge">Age</label>
+              <div class="field-box select age">
+                <select id="userFormAge" name="age"/>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+              </div>
+              <div class="field-box select month">
+                <select name="Month"/>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+              </div>
+              <div class="field-box select year">
+                <select name="Year"/>
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                </select>
+              </div>
+              <div class="valid-icon"></div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="all-field-box" id="city">
+              <label class="label" for="userFormCity">City</label>
+              <div class="field-box select city">
+                <select id="userFormCity" name="city">
+                  <option value="London">London</option>
+                  <option value="Manchester">Manchester</option>
+                  <option value="Liverpool">Liverpool</option>
+                </select>
+              </div>
+              <div class="valid-icon"></div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="checkbox-box">
+              <label>
+                <input class="checkbox" type="checkbox" name="about" value="I'm cool" checked>
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-label">I'm cool</span>
+              </label>
+              <label>
+                <input class="checkbox" type="checkbox" name="about" value="Life's good">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-label">Life's good</span>
+              </label>
+            </div>
+            <div class="radio-box">
+              <label>
+                <input class="radio" type="radio" name="preferences" value="Tee" checked>
+                <span class="radio-custom"></span>
+                <span class="radio-label">Tee</span>
+              </label>
+              <label>
+                <input class="radio" type="radio" name="preferences" value="Beer">
+                <span class="radio-custom"></span>
+                <span class="radio-label">Beer</span>
+              </label>
+            </div>
+            <button class="submit" type="submit" value="Start Now">Start Now</button>
+          </form>
         </div>
-        <form class="register-form" action="" method="post">
-          <h1 class="gradient-text">Join us now. It's FREE</h1>
-          <div class="gender-box">
-            <label class="label" for="UserForm_gender">I am</label>
-            <div class="gender_icons">
-              <ul id="gender_container">
-                <label>
-				  <li class="">
-					<input type="radio" checked name="gender" value="woman">
-					<span class="sprite-bg gender_w "></span>
-				  </li>
-				</label>
-                <label>
-			      <li >
-				    <input type="radio" name="gender" value="man">
-				    <span class="sprite-bg gender_m"></span>
-			      </li>
-			    </label>
-              </ul>
-            </div>
-          </div>
-          <div class="find-gender-box">
-            <label class="label choose-gender" for="UserForm_gender"><span class="sprite-bg search-icon"></span>looking for</label>
-            <div class="gender_icons">
-              <ul id="gender_container">
-                <label>
-				  <li class="">
-					<input type="radio" checked name="find-gender" value="woman">
-					<span class="sprite-bg gender_w"></span>
-				  </li>
-				</label>
-                <label>
-			      <li>
-				    <input type="radio" name="find-gender" value="man">
-				    <span class="sprite-bg gender_m"></span>
-			      </li>
-			    </label>
-              </ul>
-            </div>
-          </div>
-          <div class="clearfix"></div>
-          <div class="all_field_box" id="name">
-            <label class="label" for="UserForm_name">Name</label>
-            <div class="field_box name">
-              <input id="UserForm_name" name="name" class="field" type="text">
-            </div>
-            <div class="error_txt_box">
-              <div class="error_txt">Enter your name</div>
-            </div>
-            <div class="sprite-bg valid_icon"></div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="all_field_box" id="age">
-            <label class="label" for="UserForm_Age">Age</label>
-            <div class="field_box select age">
-              <select id="UserForm_Age" name="Age"/>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-              </select>
-            </div>
-            <div class="field_box select month">
-              <select name="Month"/>
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-                <option value="April">April</option>
-                <option value="May">May</option>
-                <option value="June">June</option>
-                <option value="July">July</option>
-                <option value="August">August</option>
-                <option value="September">September</option>
-                <option value="October">October</option>
-                <option value="November">November</option>
-                <option value="December">December</option>
-              </select>
-            </div>
-            <div class="field_box select year">
-              <select name="Year"/>
-                <option value="1990">1990</option>
-                <option value="1991">1991</option>
-                <option value="1992">1992</option>
-                <option value="1993">1993</option>
-                <option value="1994">1994</option>
-                <option value="1995">1995</option>
-                <option value="1996">1996</option>
-                <option value="1997">1997</option>
-                <option value="1998">1998</option>
-                <option value="1999">1999</option>
-                <option value="2000">2000</option>
-                <option value="2001">2001</option>
-                <option value="2002">2002</option>
-                <option value="2003">2003</option>
-                <option value="2004">2004</option>
-                <option value="2005">2005</option>
-                <option value="2006">2006</option>
-                <option value="2007">2007</option>
-              </select>
-            </div>
-            <div class="sprite-bg valid_icon"></div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="all_field_box " id="city">
-            <label class="label" for="UserForm_city">City</label>
-            <div class="field_box select city">
-              <select id="UserForm_city" name="City">
-				<option value="London">London</option>
-			    <option value="Manchester">Manchester</option>
-				<option value="Liverpool">Liverpool</option>
-        	  </select>
-            </div>
-            <div class="sprite-bg valid_icon"></div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="checkbox-box">
-            <label>
-			  <input class="checkbox" type="checkbox" name="about" value="I'm cool" checked>
-			  <span class="checkbox-custom"></span>
-			  <span class="checkbox-label">I'm cool</span>
-			</label>
-            <label>
-			  <input class="checkbox" type="checkbox" name="about" value="Life's good">
-			  <span class="checkbox-custom"></span>
-			  <span class="checkbox-label">Life's good</span>
-			</label>
-          </div>
-          <div class="radio-box">
-            <label>
-			  <input class="radio" type="radio" name="preferences" value="Tee" checked>
-			  <span class="radio-custom"></span>
-			  <span class="radio-label">Tee</span>
-			</label>
-            <label>
-			  <input class="radio" type="radio" name="preferences" value="Beer">
-			  <span class="radio-custom"></span>
-			  <span class="radio-label">Beer</span>
-			</label>
-          </div>
-          <input class="submit" type="submit" value="Start Now">
-        </form>
       </div>
     </div>
-  </div>
-  <main>
-    <div class="wrap">
-      <section class="code-block">
-        <h1>Code this block </h1>
-        <img src="images/code_block.png" alt="code block img">
-        <p>This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. </p>
-      </section>
-      <section class="users-list">
-        <h1>Users List</h1>
-        <div id="carousel" class="carousel">
-          <button class="sprite-bg carousel-arrow prev"></button>
-          <div class="gallery">
-            <ul class="images">
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-  		                <i class="sprite-bg ico-wink"></i>
-  		                <i class="sprite-bg ico-add"></i>
-	                  </span>
+    <div class="text-and-tabs-blocks">
+      <div class="wrap">
+        <section class="code-block">
+          <h1>Code this block </h1>
+          <img src="images/code_block.png" alt="code block img">
+          <p>This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. </p>
+        </section>
+        <section class="users-list">
+          <h1>Users List</h1>
+          <div id="carousel" class="carousel">
+            <button class="carousel-arrow prev"></button>
+            <div class="gallery">
+              <ul class="images">
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+    		                <i class="ico-wink"></i>
+    		                <i class="ico-add"></i>
+  	                  </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="gallery-item">
-                <img src="images/users_list_pic.jpg" alt="gallery img">
-                <div class="bgmaskblack">
-                  <div class="sign-block">
-                    <span>SexyGirl</span>
-                    <span class="gallery-icons">
-                      <i class="sprite-bg ico-wink"></i>
-                      <i class="sprite-bg ico-add"></i>
-                    </span>
+                </li>
+                <li class="gallery-item">
+                  <img src="images/users_list_pic.jpg" alt="gallery img">
+                  <div class="bgmaskblack">
+                    <div class="sign-block">
+                      <span>SexyGirl</span>
+                      <span class="gallery-icons">
+                        <i class="ico-wink"></i>
+                        <i class="ico-add"></i>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <button class="sprite-bg carousel-arrow next"></button>
-        </div>
-        <div class="tabs">
-          <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Users')"><span >Users List</span></button>
-            <button class="tablinks" onclick="openTab(event, 'Active-list')" id="defaultOpen"><span >Active list tab</span> &#124; 38</button>
-          </div>
-          <div id="Users" class="tabcontent">
-            <p>Something about users</p>
-          </div>
-          <div id="Active-list" class="tabcontent">
-            <div class="bars">
-              <div class="progress-bar">
-                <div class="skills progress">20%</div>
-              </div>
-              <div id="breadcrumbs">
-                <ul>
-                  <li><a href="#1">Step 1</a></li>
-                  <li><a href="#2">Step 2</a></li>
-                  <li><a href="#3" class="active-item">Step 3</a></li>
-                  <li><a href="#4" class="future-item first">Step 4</a></li>
-                  <li><a href="#5" class="future-item">Step 5</a></li>
-                </ul>
-              </div>
-			  <div id="slider"></div>
+                </li>
+              </ul>
             </div>
-            <div class="raiting">
-              <div class="cirle procent">
-                <span>37%</span>
-                <div class="slice">
-                  <div class="bar"></div>
-                  <div class="fill"></div>
+            <button class="carousel-arrow next"></button>
+          </div>
+          <div class="tabs">
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'users')"><span >Users List</span></button>
+              <button class="tablinks" onclick="openTab(event, 'activeList')" id="defaultOpen"><span >Active list tab</span> &#124; 38</button>
+            </div>
+            <div id="users" class="tabcontent">
+              <p>Something about users</p>
+            </div>
+            <div id="activeList" class="tabcontent">
+              <div class="bars">
+                <div class="progress-bar">
+                  <div class="skills progress" style="width:60%">20%</div>
                 </div>
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="#1">Step 1</a></li>
+                    <li><a href="#2">Step 2</a></li>
+                    <li><a href="#3" class="active-item">Step 3</a></li>
+                    <li><a href="#4" class="future-item first">Step 4</a></li>
+                    <li><a href="#5" class="future-item">Step 5</a></li>
+                  </ul>
+                </div>
+  			        <div id="slider" class="slider"></div>
               </div>
-              <div class="star-raiting"> 
-                <span id="1" class="sprite-bg star-checked"></span>
-                <span id="2" class="sprite-bg star-checked"></span>
-                <span id="3" class="sprite-bg star"></span>
-                <span id="4" class="sprite-bg star"></span>
-                <span id="5" class="sprite-bg star"></span>
+              <div class="raiting">
+                <div class="percentage-сircle procent">
+                  <span>37%</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+                <div class="star-raiting"> 
+                  <span id="1" class="star-checked"></span>
+                  <span id="2" class="star-checked"></span>
+                  <span id="3" class="star"></span>
+                  <span id="4" class="star"></span>
+                  <span id="5" class="star"></span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="about-dating">
-          <h1>How to succeed in online dating</h1>
-          <div class="column">
-            <p>
-              There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather
-              as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at
-              different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.
-            </p>
-            <p class="line-block">
-              In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal'
-              photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.
-            </p>
-            <p>
-              You can also upload photos to your dating profile from your Facebook account.
-            </p>
-            <ol class="custom-list">
-              <li>Access your dating life even when you’re not browsing <a target="_blank" href="http://www.cupid.com/">Cupid.com</a>!</li>
-              <li>Search for new matches from your browser easily</li>
-              <li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends are online or have updated their profile info</li>
-              <li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends</li>
-            </ol>
-            <blockquote>
+        </section>
+        <section class="about-dating">
+            <h1>How to succeed in online dating</h1>
+            <div class="column">
               <p>
-                In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal'
-                photo. 'For friends only' photos are visible only to those on your friends list.
+                There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather
+                as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at
+                different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.
               </p>
-            </blockquote>
-            <p class="ref-more">
-              &#9658;<a target="_blank" href=""> Click here to view more</a>
-            </p>
-        </div>
-      </section>
-    </div>
+              <p class="line-block">
+                In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal'
+                photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.
+              </p>
+              <p>
+                You can also upload photos to your dating profile from your Facebook account.
+              </p>
+              <ol class="custom-list">
+                <li>Access your dating life even when you’re not browsing <a target="_blank" href="http://www.cupid.com/">Cupid.com</a>!</li>
+                <li>Search for new matches from your browser easily</li>
+                <li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends are online or have updated their profile info</li>
+                <li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends</li>
+              </ol>
+              <blockquote>
+                <p>
+                  In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal'
+                  photo. 'For friends only' photos are visible only to those on your friends list.
+                </p>
+              </blockquote>
+              <p class="ref-more">
+                <i>&#9658;</i><a target="_blank" href=""> Click here to view more</a>
+              </p>
+          </div>
+        </section>
+      </div>
+    </div>  
   </main>
   <footer>
     <div class="wrap">
