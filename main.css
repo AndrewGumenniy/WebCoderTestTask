@@ -540,7 +540,6 @@ body {
 }
 .carousel img {
     display: block;
-    width: 70px !important;
     height: 100%;
 }
 .carousel .carousel-arrow {
