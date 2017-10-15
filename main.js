@@ -40,7 +40,7 @@ document.querySelector("#userFormName").onfocus= function() {
     document.querySelector("#name .error-txt").style.display = "none";
 }
 // Carousel for images
-var width = 80; 
+// var width = 80; 
 var count = 5; 
 var carousel = document.getElementById('carousel');
 var list = carousel.querySelector('.carousel ul');
