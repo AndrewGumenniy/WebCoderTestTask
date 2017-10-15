@@ -39,7 +39,6 @@ document.querySelector("#userFormName").onfocus= function() {
     document.querySelector("#city .valid-icon").classList.remove('valid');
     document.querySelector("#name .error-txt").style.display = "none";
 }
-// Users List block
 // Carousel for images
 var width = 80; 
 var count = 5; 
